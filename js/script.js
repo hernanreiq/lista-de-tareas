@@ -56,7 +56,7 @@ function guardarTarea() {
 
     var titulo_tarea = titulo_formulario.value;
     titulo_formulario.value = "";
-    h2.innerText = titulo_tarea;
+    h2.innerText = (titulo_tarea.substring(0, 1)).toUpperCase() + (titulo_tarea.substring(1, 34)).toLowerCase();
     var descripcion_tarea = descripcion_formulario.value;
     descripcion_formulario.value = "";
     textarea.value = descripcion_tarea;
