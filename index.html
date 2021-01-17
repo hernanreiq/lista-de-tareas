@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/2acc1475d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+</head>
+
+<body>
+    <h1>Creador de tareas</h1>
+    <h2 id="alerta"></h2>
+    <div class="contenedor-formulario">
+        <div class="titulo">
+            <h2>Título de la tarea</h2>
+            <input type="text" id="titulo-formulario" required maxlength="30">
+        </div>
+        <div class="contenido">
+            <h2>Descripción de la tarea</h2>
+            <textarea id="descripcion-formulario" cols="20" rows="10" required></textarea>
+        </div>
+        <button id="guardar-formulario">Guardar tarea <i class="fas fa-save"></i></button>
+    </div>
+
+    <div class="contenedor-tareas">
+        <h2>Porcentaje de tareas realizadas</h2>
+        <div class="porcentaje">
+            <div class="porciento" id="porciento">0%</div>
+        </div>
+    </div>
+    <h1>Lista de tareas</h1>
+    <div class="contenedor-tareas" id="contenedor-tareas">
+
+    </div>
+    <div class="firma">
+        <p>Desarrollo y diseño web por: <a href="https://bit.ly/hernanreiq" target="_blank">Hernan.Reiq</a></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

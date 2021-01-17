@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Serif:ital@1&family=Roboto:ital@1&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: khaki;
+}
+
+body h1 {
+    text-align: center;
+    margin: 10px 0px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 166, 0);
+    text-shadow: black 1px 1px 1px;
+    letter-spacing: 1px;
+}
+
+body h2#alerta {
+    text-align: center;
+    background-color: red;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 0px;
+    display: none;
+    transition: .3s ease;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+body h2.correcto {
+    background-color: rgb(7, 201, 0) !important;
+}
+
+div.contenedor-formulario {
+    background-color: rgb(87, 87, 87);
+    border-radius: 5px;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+div.contenedor-formulario h2 {
+    color: rgb(255, 191, 52);
+    text-shadow: black 1px 1px 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.contenedor-formulario input,
+textarea {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: unset;
+    padding: 5px;
+    color: white;
+    background-color: rgb(63, 63, 63);
+    font-family: 'PT Serif', serif;
+    letter-spacing: 1px;
+}
+
+div.contenedor-formulario input {
+    font-weight: bold;
+    width: 100%;
+}
+
+div.contenedor-formulario textarea {
+    height: 150px;
+    overflow-y: auto;
+    resize: none;
+    width: 100% !important;
+}
+
+div.contenedor-formulario button {
+    font-weight: bold;
+    border-radius: 5px;
+    border: unset;
+    padding: 10px 0px;
+    background-color: rgb(255, 166, 0);
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.contenedor-formulario button:hover {
+    background-color: rgb(29, 172, 0);
+    color: white;
+}
+
+div.contenedor-tareas,
+div.firma {
+    margin-top: 20px;
+    background-color: rgb(66, 66, 66);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+div.contenedor-tareas h2 {
+    color: gold;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.porcentaje {
+    margin-top: 10px;
+    height: 30px;
+    background-color: rgb(141, 141, 141);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+div.porciento {
+    transition: 0.75s ease;
+    width: 0%;
+    font-weight: bold;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(124, 207, 0);
+    color: white;
+    text-shadow: black 1px 1px 1px;
+}
+
+div.contenedor-tareas article.tarea {
+    position: relative;
+    background-color: rgb(255, 191, 52);
+    width: 450px;
+    height: 350px;
+    padding: 20px;
+    margin: 30px 15px;
+    border-radius: 5px;
+    box-shadow: black 1px 1px 5px;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+div.contenedor-tareas article.completada {
+    background-color: rgb(137, 255, 108);
+}
+
+div.contenedor-tareas article.tarea h2 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+div.contenedor-tareas article.tarea textarea {
+    margin: 10px 0px;
+    margin-bottom: 20px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    height: 230px;
+    overflow-y: auto;
+    resize: none;
+    width: 100%;
+    font-family: 'PT Serif', serif;
+}
+
+div.contenedor-tareas article.tarea a {
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 7px 15px;
+    background-color: rgb(255, 115, 0);
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+div.contenedor-tareas a.borrar:hover {
+    background-color: red;
+    color: rgb(255, 255, 255);
+}
+
+div.contenedor-tareas a.marcar-completado:hover {
+    background-color: rgb(29, 172, 0);
+    color: rgb(255, 255, 255);
+}
+
+div.contenedor-tareas a.marcar-incompleta:hover {
+    background-color: rgb(0, 152, 172);
+    color: rgb(255, 255, 255);
+}
+
+div.contenedor-tareas article.tarea span.sello {
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    color: rgb(1, 41, 0);
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+div.contenedor-tareas article.tarea span.fecha {
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    color: rgb(255, 145, 0);
+    font-weight: bold;
+    text-shadow: black 1px 1px 1px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+div.firma p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'PT Serif', serif;
+}
+
+div.firma {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+div.firma a {
+    color: gold;
+    text-decoration: none;
+}
+
+div.firma a:hover {
+    color: rgb(0, 153, 255);
+}
